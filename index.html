@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Digital-Tasbhi_Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description"
+    content="Digital Tasbih Counter website where you can easily count, reset and track your any custom counting with a simple tap button interface.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Muhammad Umar Raza">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <ul>
+        <a href="index.html" class="logo">
+          <svg width="30" height="37">
+            <rect x="2.5" y="2.5" width="25" height="33" rx="5" fill="none" stroke="white" stroke-width="3" />
+            <rect x="6.5" y="6.5" width="17" height="9" rx="2" fill="white" />
+            <circle cx="15" cy="25" r="6" fill="white" />
+          </svg>
+        </a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div>
+    <h1>Counter </h1>
+  </div>
+  <div class="main">
+    <div class="full">
+      <div class="screen">
+        <span id="score">0</span>
+      </div>
+      <button class="tap" onclick="increase()">Tap</button>
+      <button class="reset" onclick="reset()">Reset
+      </button>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy;2026 Muhammad Umar Raza | Digital-Tasbhi </p>
+  </footer>
+  <script>
+    let score = 0;
+    const maxScore = 99999;
+    function increase() {
+      if (score < maxScore) {
+        score++;
+        document.getElementById("score").innerText = score;
+      }
+    }
+    function reset() {
+      score = 0;
+      document.getElementById("score").innerText = score;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+body{
+  padding:0 ;
+  margin: 0;
+  background-image: url('background.gif');
+  background-attachment: fixed;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.navbar{
+  background-color:#171717 ;
+  margin: 2px 2px;
+  border : 2px solid white;
+  border-radius:10px;
+}
+.navbar ul{
+  display: flex;
+  margin-left: -15px;
+  overflow: hidden;
+}
+.navbar li{
+  list-style: none;
+  margin: 16px 14px;
+}
+.navbar a{
+  -webkit-tap-highlight-color: transparent;
+}
+.navbar a:link{
+  text-decoration: none;
+  color: #c8c8c8;
+  font-family: Tahoma;
+  font-size: 19px;
+  user-select: none;
+}
+.navbar a:visited{
+  color: #c8c8c8;
+}
+
+.navbar a:hover{
+  color: white;
+}
+.navbar .logo{
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 
+    0 0 5px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 60px cyan;
+    user-select: none;
+}
+
+.full{
+  border: 35px solid white;
+  border-radius: 60px;
+  height: 330px;
+  width: 270px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tap{
+  position: absolute;
+  top: 175px;
+  width: 120px;
+  left: 27%;
+  height: 120px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 30px;
+  user-select: none;
+  box-shadow: 0 0 5px white,
+              0 0 10px white,
+              0 0 15px white,
+              0 0 10px cyan;
+  
+}
+.screen{
+  position: absolute;
+  top: 24px;
+  left: 8.5%;
+  font-size:60px;
+  width: 220px;
+  height: 110px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+#score{
+  margin-bottom: 5px;
+}
+.reset{
+  width: 60px;
+  height: 25px;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 20px;
+  position: absolute;
+  top: 155px;
+  left: 68%;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgb(255, 85, 85),
+              0 0 10px rgb(255, 113, 113),
+              0 0 15px rgb(255, 181, 181),
+              0 0 10px rgb(232, 255, 255);
+}
+.cont{
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 70vw;
+  border: 15px solid white;
+  border-radius: 30px;
+  font-family: Georgia;
+  font-size: 24px;
+  padding: 0 20px;
+  
+}
+.help p{
+  margin: 20px auto;
+}
+
+.main{
+  overflow: auto;
+
+}
+.footer{
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid white;
+  padding: 7px 0;
+  background-color:#171717 ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+  text-align: center;
+  
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pad{
+  padding: 0 40px;
+}
+@media only screen and (max-width: 455px){
+  .navbar{
+  margin: 2px 2px;
+  border: 2px solid white;
+  border-radius:8px;
+}
+.navbar ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin: 10px 0;
+}
+.navbar li{
+  margin: 16px 10px;
+}
+.navbar a:link{
+  font-size: 18px;
+}
+h1{
+  font-size: 40px;
+}
+
+.full{
+  border: 30px solid white;
+  border-radius: 50px;
+  height: 260px;
+  width: 200px;
+  position: relative;
+}
+.tap{
+  top: 155px;
+  width: 80px;
+  left: 29%;
+  height: 80px;
+  font-size: 25px;
+  
+  
+}
+.screen{
+  top: 20px;
+  left: 9%;
+  font-size:60px;
+  width: 160px;
+  height: 90px;
+  border-radius: 18px;
+}
+
+.reset{
+  top: 130px;
+  left: 66%;
+   width: 45px;
+  height: 17px;
+  box-shadow: 0 0 3px rgb(255, 85, 85),
+              0 0 8px rgb(255, 113, 113),
+              0 0 12px rgb(255, 181, 181),
+              0 0 5px rgb(232, 255, 255);
+}
+.footer{
+  margin-top: 0;
+  padding: 10px;
+
+}
+.main{
+   margin-bottom: -70px;
+  margin-top: 15px;
+}
+.logo{
+  margin-left: -19px;
+}
+.cont{
+  margin-bottom: 70px;
+  padding: 0 10px;
+}
+.pad{
+  padding: 0 20px;
+}
+}
+@media only screen and (min-width: 750px){
+  .main{
+    margin-bottom: -30px;
+  }
+}
